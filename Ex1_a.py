@@ -1,16 +1,16 @@
 # About the templating engine, the use of {{{}}} in templates
 from jinja2 import Template
 
-name = "Федор"
+name = "Nick"
 age = 28
 
-tm = Template("Мне {{ a }} лет и зовут {{ n }}.")
+tm = Template("I am {{ a }} years old and my name is {{ n }}.")
 msg = tm.render(n=name, a=age)
 
-msg2 = f'Привет {name}'
+msg2 = f'Hi, {name}'
 print(msg, msg2, sep='\n')
 
-tm_2 = Template("Мне {{ a * 2 }} лет и зовут {{ n.upper() }}")
+tm_2 = Template("I am {{ a * 2 }} years old and my name is {{ n.upper() }}.")
 msg3 = tm_2.render(a=age, n=name)
 
 print(msg3)

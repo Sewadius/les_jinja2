@@ -14,10 +14,10 @@ class Person:
         return self.age
 
 
-person = Person('Федор', 33)
+person = Person('Mike', 33)
 
-tm = Template('Мне {{ p.age }} лет и зовут {{ p.name }}.')
-tm_2 = Template('Мне {{ p.get_age() }} лет и зовут {{ p.get_name() }}')
+tm = Template('I am {{ p.age }} years old and my name is {{ p.name }}.')
+tm_2 = Template('I am {{ p.get_age() }} years old and my name is {{ p.get_name() }}')
 
 msg = tm.render(p=person)
 msg2 = tm_2.render(p=person)

@@ -1,10 +1,10 @@
 # Using `raw` to ignore substitution
 from jinja2 import Template
 
-data = '''{% raw %}Модуль Jinja вместо
-определения {{ name }} подставляет
-соответствующее значение{% endraw %}'''
+data = '''{% raw %}The Jinja module
+instead of {{ name }} definition
+substitutes corresponding value{% endraw %}'''
 
 tm = Template(data)
-msg = tm.render(name='Федор')
+msg = tm.render(name='Mike')
 print(msg)
