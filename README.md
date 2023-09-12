@@ -3,9 +3,10 @@ ___
 **Exercise 1**  
 *a.py* : About the templating engine, the use of {{ }} in templates  
 *b.py* : Using substitution on the example of classes  
-*c.py* : Using substitution on the example of a dictionary    
+*c.py* : Using substitution on the example of the dictionary    
 ___
 **Exercise 2**  
 *a.py* : Using `raw` to ignore substitution  
 *b.py*: HTML code shielding, also with `escape` from `markupsafe`  
-*c.py*: Using `for` cycle for the dictionary
+*c.py*: Using `for` cycle for the dictionary  
+*d.py*: Using `if` in `for` cycle in the dictionary
